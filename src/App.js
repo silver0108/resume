@@ -1,10 +1,22 @@
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Main from './pages/Introduce';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      안녕하세요.
-    </div>
+    <BrowserRouter>
+      <div className='app'>
+        <Header />
+        <Routes>
+          <Route path="/resume" element={<Main />}></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
