@@ -4,8 +4,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Main from './pages/Introduce';
 import Header from './components/Header';
+import Main from './Main';
 
 function App() {
   return (
@@ -13,8 +13,9 @@ function App() {
       <div className='app'>
         <Header />
         <Routes>
-          <Route path="/resume" element={<Main />}></Route>
+          <Route path="/resume" element={<Main/>}></Route>
         </Routes>
+
       </div>
     </BrowserRouter>
   );

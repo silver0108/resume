@@ -24,7 +24,7 @@ export default function Header() {
               <St.IconWrapper>
                 <img src={githubImage} alt='github' width={40} />
               </St.IconWrapper>
-              <div>silver.0108</div>
+              <div>github</div>
             </St.LinkWrapper>
           </St.UserContactZone>
         </St.UserContactWrapper>
@@ -94,5 +94,15 @@ const St = {
   LinkWrapper: styled.a`
     display: flex;
     align-items: center;
+    text-decoration: none;
+    &:link {
+      color: black;
+    }
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: dimgray;
+    }
   `
 }
