@@ -39,6 +39,7 @@ const St = {
     justifiy-content: center;
     align-items: center;
     border-bottom: 1px solid silver;
+    padding: 20px 50px;
 
     @media (max-width: 890px) {
       flex-direction: column;
@@ -48,10 +49,13 @@ const St = {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 50px 20px 50px;
   `,
   UserImage: styled.img`
     width: 200px;
+    
+    @media (max-width: 890px) {
+      width: 170px;
+    }
 
     @media (max-width: 550px) {
       width: 150px;
@@ -73,6 +77,11 @@ const St = {
     font-size: 50px;
     font-weight: bold;
     white-space: nowrap;
+
+    @media (max-width: 890px) {
+      margin-top: 20px;
+    }
+
     @media (max-width: 550px) {
       font-size: 30px;
     }

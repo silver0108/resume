@@ -36,22 +36,34 @@ const St = {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid silver;
+    margin-bottom: 20px;
   `,
   CompanyWrapper: styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
-    margin-top: 20px
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      justify-content: center;
+    }
   `,
   CompanyName: styled.div`
     font-size: 20px;
     font-weight: bold;
   `,
   Period: styled.div`
+    @media (max-width: 700px) {
+      font-size: 13px;
+      margin: 10px;
+    }
   `,
   Role: styled.div`
     font-size: 14px;
+    @media (max-width: 700px) {
+      text-align: center;
+    }
+    
   `,
   Work: styled.div`
     margin: 20px 0;

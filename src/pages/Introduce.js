@@ -28,7 +28,6 @@ export default function Introduce() {
 
 const St = {
   ContentWrapper: styled.div`
-    margin-top: 20px
   `,
   Text: styled.div`
     @media (max-width: 700px) {
